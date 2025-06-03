@@ -1,0 +1,266 @@
+@media screen and (max-width: 1442px) {
+.top-info-bar .lang-switch {
+    margin-left: 796px;
+}
+.hero-row{
+    padding-left: 200px;
+    padding-top: 0px;
+}
+.hero-left h6{
+    margin-bottom: 0px;
+}
+.about-section .info h2{
+    z-index: 2;
+}
+.portfolio-section .title h3{
+    padding-left: 127px;
+}
+.portfolio-section .resume {
+    padding-left: 127px;
+}
+.portfolio-section .col{
+    width: 95%;
+}
+.title:after{
+    left: 115px;
+}
+.about-section .row2 {
+    margin-left: 120px;
+}
+.headline1:after{
+    left: 600px;
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+.top-info-bar .lang-switch {
+    margin-left: 380px;
+}
+
+.hero-row{
+    padding-left: 95px;
+    padding-top: 0px;
+    z-index: 2;
+}
+.hero-left h1{
+    font-size: 70px;
+}
+.hero-left h6{
+    margin-bottom: 0px;
+}
+.hero-img-bg{
+    width: 85vw;
+    opacity: .6;
+    z-index: 1;
+}
+.about-section .about-info {
+    padding: 0px 0px 0px 0px;
+}
+.about-section .row2{
+    margin-left: 10px;
+}
+.about-section .about{
+    width: 297px;
+    height: 297px;
+}
+.about-section .social-icons {
+    gap: 10px;
+}
+.about-section .social-icons a:nth-child(3){
+    margin-top: 297px;
+}
+.about-section .social-icons a:nth-child(4){
+    margin-top: 293px;
+}
+.about-section .social-icons a:nth-child(2){
+    margin-top: 293px;
+}
+.about-section .social-icons a:nth-child(1){
+    margin-top: 272px;
+}
+.about-section .social-icons a:nth-child(5){
+    margin-top: 272px;
+}
+.about-section .row2{
+    gap: 115px;
+}
+.headline1:after {
+    left: 411px;
+     top: 100px;
+}
+.portfolio-section .title h3 {
+    padding-left: 20px;
+}
+.portfolio-section .resume {
+    padding-left: 20px;
+}
+.title:after {
+    left: 7px;
+}
+
+}
+
+@media screen and (max-width: 770px) {
+.top-info-bar .lang-switch {
+    margin-left: 120px;
+}
+.about-section .row2{
+    display: grid;
+}
+.hero-row{
+    min-height: 595px;
+    padding-left: 92px;
+}
+
+.about-section .about {
+    width: 315px;
+    height: 315px;
+    left: 25%;
+}
+.about-section .info{
+    gap: 0px;
+    margin-top: 450px;
+}
+.hero-img-bg{
+    width: 80vw;
+}
+.about-section .row2 {
+    gap: 140px;
+}
+.headline1:after {
+    left: 15px;
+    top: 540px;
+}
+.about-section .about-info {
+    padding-left: 10px; 
+}
+.about-section .about-info {
+    width: 85vw;
+}
+.about-section .bio-table{
+    gap: 8px;   
+    font-size: 14px;
+}
+.about-section .separated{
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.services-section .box1, 
+.services-section .box2, 
+.services-section .box3
+{
+width: 47%;
+}
+.services-section .box{
+    flex-wrap: wrap;
+    /* padding: 0px 10px;  */
+    position: relative;
+    top: 25px;
+}
+.services-section .container3{
+    padding-left: 10px;
+    padding-right: 0px;
+}
+.hero-container{
+    overflow: hidden;
+    width: 100%;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 377px) {
+.top-info-bar{
+    visibility: hidden;
+}
+.logo{
+    visibility: hidden;
+}
+.navbar{
+    visibility: hidden;
+}
+.hero-img-bg {
+    width: 102vw;
+    opacity: .4;
+}
+.hero-section::after{
+    max-width: 200vw;
+}
+.hero-row{
+    padding-left: 10px;
+}
+.hero-left{
+    position: relative;
+    top: -14px;
+}
+.hero-left h1{
+    font-size: 36px;
+}
+.hero-left h6{
+font-size: 18px;
+}
+.hero-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.hero-container{
+    width: 100%;
+}
+.about-section{
+    width: 100%;
+    margin-left: 0px;
+}
+.about-section .row2{
+    left: 0px;
+}
+.about-section .about{
+    left: 6.75%;
+}
+.about-section .bio-table{
+    grid-template-columns: 1fr;
+    gap: 11px;
+}
+.about-info{
+    padding-left: 5px;
+}
+.about-section .about-info p{
+    width: 100%;
+    font-size: 15px;
+}
+.services-section{
+    width: 100%;
+    margin-left: 0px;
+}
+.services-section .box1, .services-section .box2, .services-section .box3{
+    width: 100%;
+    margin-left: 0px;
+}
+.services-section .box{
+    display: grid;
+}
+.portfolio-section .resume {
+    padding-left: 10px;
+    gap: 14px;
+}
+.portfolio-section{
+    width: 100%;
+    margin-left: 0px;
+}
+.portfolio-section .col .col1, .portfolio-section .col .col2, .portfolio-section .col .col3{
+    width: 100%;
+}
+.portfolio-section .col {
+    width: 95%;
+    display: grid
+}
+}   
