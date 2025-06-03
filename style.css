@@ -368,7 +368,7 @@ nav.navbar li a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 18px;
-    font-size: 14px;
+    font-size: 16px;
 }
 .about-section .bio-table .label {
     font-weight: 600;
