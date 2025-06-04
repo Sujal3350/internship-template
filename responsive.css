@@ -173,6 +173,12 @@ width: 47%;
     overflow: hidden;
     width: 100%;
 }
+.col .img-container:hover h1{
+    font-size: 16px;
+}
+.col .img-container:hover p{
+    font-size: 12px;
+}
 }
 
 @media screen and (max-width: 427px) {
@@ -360,7 +366,7 @@ font-size: 18px;
 }
 .hero-section::after{
     right: 0vh;
-    top: 5px;
+    top: 40px;
 }
 .about-section{
     width: 113vw;

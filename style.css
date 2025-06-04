@@ -643,11 +643,18 @@ nav.navbar li a {
     filter: brightness(50%);
     z-index: 1;
 }
-.col .img-container:hover p , .col .img-container:hover h1{
+.col .img-container:hover p{
     opacity: 1;
     color: #fff;
     font-weight: 400;
-    font-size: 30px;
+    z-index: 2;
+    filter: brightness(90%);
+}
+.col .img-container:hover h1{
+    opacity: 1;
+    color: #fff;
+    font-weight: 400;
+    font-size: 25px;
     z-index: 2;
     filter: brightness(100%);
 }
