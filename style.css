@@ -606,7 +606,7 @@ nav.navbar li a {
     margin-bottom: 10px;
     gap: 1rem;
 }
-.portfolio-section .col {
+.col {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
@@ -615,28 +615,33 @@ nav.navbar li a {
     display: flex;
     gap: 18px;
 }
-.portfolio-section .col .col1, 
-.portfolio-section .col .col2, 
-.portfolio-section .col .col3 {
+
+.col .col1, 
+.col .col2, 
+.col .col3 {
     width: 33.33%;
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
-.portfolio-section .col img {
+
+.col .img-container {
+    width: 100%;
+    overflow: hidden; 
+}
+
+.col img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
 }
-.portfolio-section .col img:hover {
+
+.col .img-container:hover img {
     transform: scale(1.05);
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
     filter: brightness(50%);
-    
 }
-
-
 .title:after{
     background-color: rgba(255, 147, 0, 0.5);
     content: "";
