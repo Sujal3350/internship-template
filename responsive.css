@@ -175,9 +175,91 @@ width: 47%;
 }
 }
 
-
-
-
+@media screen and (max-width: 427px) {
+.top-info-bar{
+    visibility: hidden;
+}
+.logo{
+    visibility: hidden;
+}
+.navbar{
+    visibility: hidden;
+}
+.hero-img-bg {
+    width: 102vw;
+    opacity: .4;
+}
+.hero-section::after{
+    max-width: 190vw;
+}
+.hero-row{
+    padding-left: 10px;
+}
+.hero-left{
+    position: relative;
+    top: -14px;
+}
+.hero-left h1{
+    font-size: 36px;
+}
+.hero-left h6{
+font-size: 18px;
+}
+.hero-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.hero-container{
+    width: 100%;
+}
+.about-section{
+    width: 100%;
+    margin-left: 0px;
+}
+.about-section .row2{
+    left: 0px;
+}
+.about-section .about{
+    left: 12.75%;
+}
+.about-section .bio-table{
+    grid-template-columns: 1fr;
+    gap: 11px;
+}
+.about-info{
+    padding-left: 5px;
+}
+.about-section .about-info p{
+    width: 100%;
+    font-size: 15px;
+}
+.services-section{
+    width: 100%;
+    margin-left: 0px;
+}
+.services-section .box1, .services-section .box2, .services-section .box3{
+    width: 100%;
+    margin-left: 0px;
+}
+.services-section .box{
+    display: grid;
+}
+.portfolio-section .resume {
+    padding-left: 10px;
+    gap: 14px;
+}
+.portfolio-section{
+    width: 100%;
+    margin-left: 0px;
+}
+.portfolio-section .col .col1, .portfolio-section .col .col2, .portfolio-section .col .col3{
+    width: 100%;
+}
+.portfolio-section .col {
+    width: 95%;
+    display: grid
+}
+}   
 
 @media screen and (max-width: 377px) {
 .top-info-bar{
@@ -193,9 +275,9 @@ width: 47%;
     width: 102vw;
     opacity: .4;
 }
-.hero-section::after{
-    max-width: 200vw;
-}
+/* .hero-section::after{
+    max-width: 113vw;
+} */
 .hero-row{
     padding-left: 10px;
 }
@@ -263,4 +345,65 @@ font-size: 18px;
     width: 95%;
     display: grid
 }
-}   
+}
+
+@media screen and (max-width: 321px) {
+
+.hero-section{
+    width: 113vw;
+    height: 113vh;
+}
+.hero-img-bg{
+    width: 113vw;
+    height: 113vh;
+    opacity: .4;
+}
+.hero-section::after{
+    right: 0vh;
+    top: 5px;
+}
+.about-section{
+    width: 113vw;
+   
+}
+.about-section .about{
+    left: 3.75%;
+}
+.about-section .about-info{
+    width: 106vw;
+}
+.about-section .about-info p{
+    font-size: 16px;
+}
+.about-section .bio-table{
+    font-size: 18px;
+}
+.services-section{
+    width: 113vw;
+}
+.services-section .box{
+    width: 107vw;
+}
+.services-section .container3{
+    padding-left: 2px;
+}
+.services-section .headline h3{
+    padding-left: 10px;
+}
+.headline h3:after {
+    margin-left: 13px;
+}
+.portfolio-section{
+    width: 113vw;
+}
+.portfolio-section .resume{
+    margin-left: 0px;
+
+}
+.portfolio-section .resume .detail:last-child {
+    margin-top: 30px;
+    display: block;
+    width: 100vw;
+    position: absolute;
+}
+}
