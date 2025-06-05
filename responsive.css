@@ -249,6 +249,7 @@ font-size: 18px;
 }
 .services-section .box{
     display: grid;
+    padding-right: 12px;
 }
 .portfolio-section .resume {
     padding-left: 10px;
@@ -355,28 +356,39 @@ font-size: 18px;
 
 @media screen and (max-width: 321px) {
 
+.top-info-bar{
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 0px;
+    height: 0px;
+}
+
 .hero-section{
-    width: 113vw;
+    width: 320px;
     height: 113vh;
 }
 .hero-img-bg{
-    width: 113vw;
-    height: 113vh;
+    width: 326px;
+    height: 667px;
     opacity: .4;
 }
+.top-info-bar .lang-switch{
+
+    margin-left: 0px;
+}
 .hero-section::after{
-    right: 0vh;
-    top: 40px;
+    /* right: 0px;
+    top: 40px; */
 }
 .about-section{
-    width: 113vw;
+    width: 320px;
    
 }
 .about-section .about{
     left: 3.75%;
 }
 .about-section .about-info{
-    width: 106vw;
+    width: 296px;
 }
 .about-section .about-info p{
     font-size: 16px;
@@ -385,10 +397,11 @@ font-size: 18px;
     font-size: 18px;
 }
 .services-section{
-    width: 113vw;
+    width: 320px;
 }
 .services-section .box{
-    width: 107vw;
+    width: 297px;
+    padding-right: 0px;
 }
 .services-section .container3{
     padding-left: 2px;
@@ -400,7 +413,7 @@ font-size: 18px;
     margin-left: 13px;
 }
 .portfolio-section{
-    width: 113vw;
+    width: 320px;
 }
 .portfolio-section .resume{
     margin-left: 0px;
@@ -409,7 +422,38 @@ font-size: 18px;
 .portfolio-section .resume .detail:last-child {
     margin-top: 30px;
     display: block;
-    width: 100vw;
+    width: 296px;
     position: absolute;
+}
+.about-section .row2{
+    width: 320px;
+}
+.about-section .about{
+    height: 282px;
+    width: 282px;
+}
+.about-section .about-info h2{
+    width: 296px;
+}
+.headline1{
+    width: 296px;
+}
+.about-section .about-info p{
+    width: 296px;
+}
+.about-section .social-icons a:nth-child(1){
+margin-top: 250px;
+}
+.about-section .social-icons a:nth-child(2){
+ margin-top: 275px;   
+}
+.about-section .social-icons a:nth-child(3){
+    margin-top: 286px;
+}
+.about-section .social-icons a:nth-child(4){
+    margin-top: 275px;
+}
+.about-section .social-icons a:nth-child(5){
+    margin-top: 250px;
 }
 }
