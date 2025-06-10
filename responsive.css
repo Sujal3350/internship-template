@@ -34,8 +34,7 @@
 
 @media (max-width:1024px){
     .logo{
-        position: fixed;
-    }
+    position: fixed;  }
 
     .navbar{
         height:100% !important;
@@ -131,7 +130,9 @@
     .logo{
         visibility: hidden;
     }
-
+    .scroll_up{
+        visibility: hidden;
+    }
     .navbar{
         visibility: hidden;
     }
@@ -220,6 +221,7 @@
     /* body{
        width: 375px;
     } */
+     
      .home{
         padding-left: 0;
         padding-right: 0;

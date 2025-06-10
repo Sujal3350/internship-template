@@ -549,17 +549,7 @@ img{
     padding-right: 12px;
 }
 
-@keyframes slide-left-right {
-    0% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
+
 .feature-box-01{
     padding: 40px;
     background: #fff;
@@ -567,8 +557,7 @@ img{
     overflow: hidden;
     position: relative;
     z-index: 1;
-    animation: slide-left-right 1s 0s 1 linear;
-    animation-direction: var(--bs-gutter-x);
+
 }
 
 
