@@ -15,3 +15,26 @@
                 });
             });
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+  const scrollUpBtn = document.getElementById("scrollUpBtn");
+
+  scrollUpBtn.style.display = "none";
+
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollUpBtn.style.display = "flex";
+    } else {
+      scrollUpBtn.style.display = "none";
+    }
+  });
+
+  scrollUpBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
+
