@@ -54,3 +54,20 @@
 });
 });
 
+const menuBtn = document.getElementById('menuBtn');
+const iconDiv = menuBtn.querySelector('.lines');
+const scrollBar = document.getElementById('scrollbar');
+
+   menuBtn.addEventListener('click', () => {
+    iconDiv.classList.toggle('active1');
+    scrollBar.classList.toggle('show');
+});
+
+const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.forEach(l => l.classList.remove('active1')); // remove from all
+      link.classList.add('active1'); // add to clicked
+    });
+  });

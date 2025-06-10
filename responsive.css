@@ -127,13 +127,20 @@
 }
 
 @media (max-width:600px){
-    .logo{
-        visibility: hidden;
+
+    #scrollbar{
+        display: none;
+        z-index: 222;
+    }
+    
+    #scrollbar.show{
+        display: block!important;
+    }
+    .mob-header{
+        display: block!important;
+        visibility: visible;
     }
     .scroll_up{
-        visibility: hidden;
-    }
-    .navbar{
         visibility: hidden;
     }
     .home{

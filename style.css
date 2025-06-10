@@ -25,7 +25,72 @@ body{
     font-weight: 500;
     overflow: hidden;
 }
+.nav-link.active1 svg{
+    color:#ff9301;
+}
+.mob-header{
+    display:block;
+    position:fixed;
+    right:15px;
+    bottom: 15px;
+    z-index: 3;
+    visibility: hidden;
+}
 
+.toggle-menu{
+    width:60px;
+    height: 60px;
+    background: #ff9301;
+    border-radius: 50%;
+    position: relative;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-menu span{
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    margin:auto;
+    background: #fff;
+    color: #fff;
+    transition: .3s;
+}
+
+.toggle-menu span:first-child{
+    top:-17px;
+
+}
+
+.toggle-menu span:nth-child(2){
+    top: 2px;
+
+}
+
+.toggle-menu span:nth-child(3){
+    top:auto;
+    bottom: 19px;
+}
+
+.toggle-menu .active1 span:first-child{
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.toggle-menu .active1 span:nth-child(2){
+    left: 50%;
+    width: 0;
+}
+
+.toggle-menu .active1 span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-45deg);
+}
 .scroll_up button {
     text-decoration: none;
     background: none;
@@ -64,11 +129,13 @@ body{
     position: fixed;
     width: 80px;
     height: 100vh;
-    padding-top:80px;
+    /* padding-top:80px; */
     text-align: center;
     justify-content: flex-start;
     border-right: 1px solid rgba(11, 11, 19, 0.1);
     box-sizing: border-box;
+    background-color: white;
+    z-index: 222;
 }
 
 .navbar li {
@@ -129,7 +196,7 @@ section#home{
     margin-left: 880px;
 }
 
-.active{
+.active2{
     color: white;
     font-weight: 500;
     font-size: 14px;
@@ -225,7 +292,7 @@ section#home{
 
 button.cv{
     color: #fff;
-    background: #0b0b13;
+    background: #0b0b13 !important;
     background-color: #0b0b13;
     padding: 0.25px;
     line-height: 42px;
@@ -243,11 +310,7 @@ button.cv{
     cursor: pointer;
     outline: none !important;
     box-sizing: border-box;
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0px;
-    text-align: var(--bs-body-text-align);
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0,0,0,0,);
+
 }
 .col01 .cv:hover{
     color: black;
