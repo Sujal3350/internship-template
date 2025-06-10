@@ -132,9 +132,38 @@
 
     #scrollbar{
         display: none;
-        z-index: 222;
+        
     }
-    
+    .col01 .cv:hover{
+    background-color: transparent;
+}
+    .navbar {
+        transform: translateX(-100%);
+        animation: navbar-slide-in 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    #scrollbar.show .navbar {
+        transform: translateX(0);
+        animation: navbar-slide-in 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+        .navbar {
+        transform: translateX(0%);
+        animation: navbar-slide-out 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    #scrollbar.show .navbar {
+        transform: translateX(-100%);
+        animation: navbar-slide-out 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+    @keyframes navbar-slide-in {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+    }
+    @keyframes navbar-slide-out {
+        from{transform: translateX(0);}
+        to{transform: translateX(-100%);}
+    }
+    .navbar{
+        transform: translateX(0), !important; ;
+    }
     #scrollbar.show{
         display: block!important;
     }

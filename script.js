@@ -55,12 +55,21 @@
 });
 
 const menuBtn = document.getElementById('menuBtn');
-const iconDiv = menuBtn.querySelector('.lines');
-const scrollBar = document.getElementById('scrollbar');
+const scrollbar = document.getElementById('scrollbar');
+const navbar = document.querySelector('.navbar');
 
-   menuBtn.addEventListener('click', () => {
-    iconDiv.classList.toggle('active1');
-    scrollBar.classList.toggle('show');
+menuBtn.addEventListener('click', function () {
+    if (scrollbar.classList.contains('show')) {
+        // Start slide-out animation
+        navbar.style.animation = 'navbar-slide-out 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards';
+        setTimeout(() => {
+            scrollbar.classList.remove('show');
+            navbar.style.animation = '';
+        }, 800); // match animation duration
+    } else {
+        scrollbar.classList.add('show');
+        navbar.style.animation = 'navbar-slide-in 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards';
+    }
 });
 
 const navLinks = document.querySelectorAll('.nav-link');

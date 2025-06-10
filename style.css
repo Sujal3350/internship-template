@@ -292,7 +292,7 @@ section#home{
 
 button.cv{
     color: #fff;
-    background: #0b0b13 !important;
+    background: #0b0b13;
     background-color: #0b0b13;
     padding: 0.25px;
     line-height: 42px;
@@ -307,15 +307,15 @@ button.cv{
     text-decoration: none;
     transition: .4s;
     letter-spacing: .3px;
-    cursor: pointer;
+    /* cursor: pointer; */
     outline: none !important;
     box-sizing: border-box;
 
 }
 .col01 .cv:hover{
-    color: black;
+    color: #000000;
     background-color: white;
-    border: #0b0b13 solid 1px;
+    border: #000000 solid 1px;
 }
 
 .home-banner{
